@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copy To Clipboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Copy To Clipboard</h1>
+    </header>
+    <main>
+      <textarea id="to-copy" spellcheck="false">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi dicta cum inventore nesciunt pariatur explicabo aperiam eveniet nihil quos illum, error, laudantium ipsum maxime ad voluptates alias dolore corrupti! Quisquam!
+      </textarea>
+
+      <button id="copy-btn" type="button">
+        Copy To Clipboard
+        <span class="copiedtext" aria-hidden="true"> Copied </span>
+      </button>
+
+      <textarea
+        id="cleared"
+        placeholder="Paste your copied text here. Just To Test..."
+      >
+      </textarea>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

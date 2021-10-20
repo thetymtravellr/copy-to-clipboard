@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+header,
+footer {
+  background: rgb(114, 201, 125);
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  margin: 0;
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+main {
+  height: 76vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copiedtext {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-1rem);
+  color: #000;
+  transition: all 0.5s;
+}
+
+.copied .copiedtext {
+  opacity: 1;
+  transform: translateY(-2rem);
+}
+
+textarea {
+  display: block;
+  width: 90%;
+  max-width: 500px;
+  height: 150px;
+  margin: 2rem auto 1.5rem;
+  background: #f2f2f6;
+  border: 1px solid #ddd;
+  resize: vertical;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  padding: 0.8rem;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: rgb(163, 224, 171);
+}
+
+[id="cleared"] {
+  margin-top: 4rem;
+}
+
+textarea:focus {
+  border-color: rgb(114, 201, 125);
+}
+
+button {
+  position: relative;
+  padding: 8px 20px;
+  margin-top: 1.5rem;
+  border: 0;
+  border-radius: 3px;
+  font-size: 0.835rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background: rgb(114, 201, 125);
+  transition: background 0.275s;
+}
+
+button:hover,
+button:focus {
+  background: rgb(93, 184, 107);
+}
